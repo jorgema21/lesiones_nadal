@@ -972,7 +972,7 @@
 
      <script>
         // Images asset
-const fruitImages = {
+const frames = {
 
   1: 'frames_premiere/0000-0860000.png',
   2: 'frames_premiere/0000-0860001.png',
@@ -2759,7 +2759,7 @@ applyTextStyles(1);
 function trackScrollPosition() {
   const y = window.scrollY;
   const label = Math.min(Math.floor(y/40) + 1, 860);
-  const imageToUse = fruitImages[label];
+  const imageToUse = frames[label];
   // Change the background image
   $('.image-container').css('background-image', `url('${imageToUse}')`);
   // Change the text style
