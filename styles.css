@@ -1,6 +1,21 @@
 body {
   margin: 0;
+  background-color: #fff8f8;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;
+  color: #333; /* Color del texto */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
 }
 ul {
   list-style: none;
@@ -45,7 +60,7 @@ ul li {
   background-position: center center;
   background-image: url('../premiere/frames_premiere/0000-0860000.png');
 }
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 700px){ /*ordenador imagen*/
   .image-container {
     height: 100vh;
     width: 100%;
@@ -60,7 +75,8 @@ ul li {
     background-image: url('../premiere/frames_premiere/0000-0860000.png');
   }
 }
-.text-container {
+
+.text-container { /*movil textos*/
     width: 100%;
     height: 100%;
     position: fixed;
@@ -75,7 +91,7 @@ ul li {
       color: darkred;
     text-align: center;
     text-shadow: 1px -3px 2px rgba(0, 0, 0, 0.8);
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 0.5px white;
     }
     .title { 
       opacity: 0;
@@ -100,7 +116,7 @@ ul li {
     position: absolute;
     margin-right: 10%;
     }
-    @media only screen and (max-width: 699px) {
+    @media only screen and (max-width: 699px) { /*movil cartelas*/
       #cartela-2 {
         margin-top: 75%;
         margin-left: 30%;
@@ -142,7 +158,7 @@ ul li {
     }
     
   }
-  @media only screen and (min-width: 700px){
+  @media only screen and (min-width: 700px){ /*ordenador textos*/
     .text-container {
       width: 35%;
     height: 100%;
@@ -186,13 +202,69 @@ ul li {
     width: 100%;
     position: absolute;
     }
+    .years_texts {
+    width: 100%;
+      height: 100%;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: start;
+      top: 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: darkred;
+      margin-left: 20%;
+      font-size: 14px;
   }
+  .years_line {
+    width: 20%;
+      height: 50%;
+      border: none;
+      border-bottom: 2px dashed darkred;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: start;
+      top: 0;
+      margin-left: 20%;
+  }
+  #text23 {
+    justify-content: start;
+    margin-top: 19%;
+  }
+  #line23 {
+    justify-content: center;
+    margin-top: -21%;
+  }
+  #text21 {
+    justify-content: start;
+    margin-top: 32%;
+  }
+  #line21 {
+    justify-content: center;
+    margin-top: -8%;
+  }
+  #text10 {
+    justify-content: start;
+    margin-top: 60%;
+  }
+  #line10 {
+    justify-content: center;
+    margin-top: 20%;
+  }
+  #text03 {
+    justify-content: start;
+    margin-top: 80%;
+  }
+  #line03 {
+    justify-content: center;
+    margin-top: 40%;
+  }
+    }
+
     :root{
       --rojo: darkred;
       --rojosuave: rgba(250, 220, 220, 1);
-
-
-      
-
     }
   }
